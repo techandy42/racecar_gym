@@ -128,3 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 ./models/scenes/*
+
+# Newly added
+racecar_gym_env/
+models/scenes/*
+!models/scenes/.gitkeep
