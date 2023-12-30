@@ -9,10 +9,10 @@ from stable_baselines3 import PPO
 from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
 from stable_baselines3.common.env_util import make_vec_env
 
-parser = argparse.ArgumentParser(description='Train a PPO model.')
+parser = argparse.ArgumentParser(description='Train a PPO model for Austria track.')
 parser.add_argument('--total_timesteps', type=int, default=1e5, help='Total number of training timesteps.')
 parser.add_argument('--render_mode', type=str, default='human', help='Render mode for the environment.')
-parser.add_argument('--model_save_name', type=str, default='ppo_racecar_model', help='Filename to save the trained model.')
+parser.add_argument('--model_save_name', type=str, default='ppo_austria_model', help='Filename to save the trained model.')
 args = parser.parse_args()
 
 class CustomCNN(BaseFeaturesExtractor):
