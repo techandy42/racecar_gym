@@ -37,7 +37,7 @@ policy_kwargs = dict(
 )
 
 # Initialize the PPO model with MultiInputPolicy
-model = PPO("MultiInputPolicy", env, policy_kwargs=policy_kwargs, verbose=1, tensorboard_log=f"./{args.model_id}_tensorboard/")
+model = PPO("MultiInputPolicy", env, policy_kwargs=policy_kwargs, verbose=1)
 
 print(f"Training PPO model for {args.total_timesteps} timesteps")
 
