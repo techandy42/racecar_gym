@@ -37,7 +37,7 @@ policy_kwargs = dict(
 )
 
 # Initialize the PPO model with MultiInputPolicy
-model = PPO("MultiInputPolicy", env, policy_kwargs=policy_kwargs, verbose=1)
+model = PPO("MultiInputPolicy", env, policy_kwargs=policy_kwargs)
 
 print(f"Training PPO model for {args.total_timesteps} timesteps")
 
