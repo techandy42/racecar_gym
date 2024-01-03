@@ -12,7 +12,7 @@ from lidar_only_model import CustomCNN, FlattenDictActionWrapper
 parser = argparse.ArgumentParser(description='Train a PPO model for Austria track.')
 parser.add_argument('--huggingface_token', type=str, help='HuggingFace CLI login token.')
 parser.add_argument('--huggingface_username', type=str, help='HuggingFace account username.')
-parser.add_argument('--total_timesteps', type=int, default=1e3, help='Total number of training timesteps.')
+parser.add_argument('--total_timesteps', type=int, default=1e5, help='Total number of training timesteps.')
 parser.add_argument('--render_mode', type=str, default='human', help='Render mode for the environment.')
 parser.add_argument('--model_id', type=str, default='ppo_austria_model', help='Filename to save the trained model.')
 args = parser.parse_args()

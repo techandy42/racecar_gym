@@ -9,7 +9,7 @@ from lidar_only_model import FlattenDictActionWrapper
 parser = argparse.ArgumentParser(description='Test a PPO model for Austria track.')
 parser.add_argument('--huggingface_username', type=str, help='HuggingFace account username.')
 parser.add_argument('--model_id', type=str, help='HuggingFace model ID.')
-parser.add_argument('--max_steps', type=int, default=1e6, help='Total number of test timesteps.')
+parser.add_argument('--max_steps', type=int, default=1e5, help='Total number of test timesteps.')
 parser.add_argument('--render_mode', type=str, default='human', help='Render mode for the environment.')
 args = parser.parse_args()
 
